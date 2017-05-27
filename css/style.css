@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo");
+h2 {
+  font-family: 'Baloo', cursive; }
+
+/*HEADER*/
+nav {
+  background-color: #3f51b5; }
+  nav ul a {
+    font-family: 'Baloo', cursive; }
+
+/*PARALLAX*/
+.parallax-container {
+  height: 500px; }
+
+/*FOOTER*/
+.page-footer {
+  background-color: #3f51b5; }
