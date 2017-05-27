@@ -3,13 +3,162 @@
 <head>
 	<title>Material Design Proyect</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 	<script type="text/javascript" src="js/customscript.js"></script>
 </head>
 <body>
-
+	<!--HEADER-->
+	<header>
+		<nav>
+			<div class="nav-wrapper container">
+				<a href="index.html" class="brand-logo"><img src="images/webtech-logob.png" class="responsive-img"></a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#about-us">About</a></li>
+					<li><a href="#login">Login</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!--END HEADER-->
+	<!--MAIN CONTAINER-->
+	<div class="parallax-container">
+		<div class="parallax"><img src="images/back-contain-2b.jpg" class="responsive-img"></div>
+	</div>
+	<!--WELCOME SECTION-->
+	<div class="section white">
+		<div class="row container">
+			<h2 class="header">WELCOME TO THE FUTURE</h2>
+			<p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+		</div>
+	</div>
+	<!--END WELCOME SECTION-->
+	<div class="parallax-container">
+		<div class="parallax"><img src="images/back-contain-1b.jpg" class="responsive-img"></div>
+	</div>
+	<!--ABOUT US-->
+	<div class="section white">
+		<div class="row container">
+			<h2 id="about-us" class="header">ABOUT US</h2>
+			<div class="row">
+				<div class="col s12 m4">
+					<div class="card">
+						<div class="card-image">
+							<img src="images/about-simons.jpg" class="responsive-img">
+							<span class="card-title">Derek Simons</span>
+						</div>
+						<div class="card-content">
+							<p>Maintains staff by recruiting, selecting, orienting, and training employees; maintaining a safe, secure, and legal work environment; developing personal growth opportunities.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m4">
+					<div class="card">
+						<div class="card-image">
+							<img src="images/about-carter.jpg" class="responsive-img">
+							<span class="card-title">Jane Carter</span>
+						</div>
+						<div class="card-content">
+							<p>Accomplishes staff results by communicating job expectations; planning, monitoring, and appraising job results; coaching, coordinating, policies, procedures, and productivity standards.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m4">
+					<div class="card">
+						<div class="card-image">
+							<img src="images/about-redfieldb.jpg" class="responsive-img">
+							<span class="card-title">Chris Redfield</span>
+						</div>
+						<div class="card-content">
+							<p>Establishes strategic goals by gathering pertinent business, financial, and operations information; identifying and evaluating trends and options; defining objectives; evaluating outcomes.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--END ABOUT US-->
+	<div class="parallax-container">
+		<div class="parallax"><img src="images/back-contain-3.jpg" class="responsive-img"></div>
+	</div>
+	<!--LOGIN SECTION-->
+	<div class="section white">
+		<div class="row container">
+			<h2 id="login" class="header">WANNA SEE MORE?, JOIN US!</h2>
+			<main>
+				<center>
+					<div class="section"></div>
+					<h5 class="indigo-text">To know more about our technology, please login into your account</h5>
+					<div class="section"></div>
+					<div class="container">
+						<div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
+							<form class="col s12" method="post">
+								<div class='row'>
+									<div class='col s12'>
+									</div>
+								</div>
+								<div class='row'>
+									<div class='input-field col s12'>
+										<input class='validate' type='email' name='email' id='email' />
+										<label for='email'>Enter your email</label>
+									</div>
+								</div>
+								<div class='row'>
+									<div class='input-field col s12'>
+										<input class='validate' type='password' name='password' id='password' />
+										<label for='password'>Enter your password</label>
+									</div>
+									<label style='float: right;'>
+										<a class='pink-text' href='#!'><b>Forgot Password?</b></a>
+									</label>
+								</div>
+								<br/>
+								<center>
+									<div class='row'>
+										<button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo'>Login</button>
+									</div>
+								</center>
+							</form>
+						</div>
+					</div>
+					<a href="#!">Create account</a>
+				</center>
+				<div class="section"></div>
+				<div class="section"></div>
+			</main>
+		</div>
+	</div>
+	<!--END LOGIN SECTION-->
+	<!--END MAIN CONTAINER-->
+	<!--FOOTER-->
+	<footer class="page-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">Social media</h5>
+					<p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<h5 class="white-text">Contact info</h5>
+					<ul>
+						<li><a class="grey-text text-lighten-3" href="#!">Address - Paseo Colón 900, 8° "A" - Bs.As</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Phone 1 - (011)4-555-6666</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Phone 2 - (011)15-3333-7777</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">E-mail - info@gus1985.com</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© 2017 Copyright gus1985 proyects
+				<a class="grey-text text-lighten-4 right" href="#!">Privacy Policy</a>
+			</div>
+		</div>
+	</footer>
+	<!--END FOOTER-->
 </body>
 </html>
