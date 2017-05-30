@@ -1,25 +1,88 @@
+/*IMPORTS*/
 @import 'variables';
 @import url('https://fonts.googleapis.com/css?family=Baloo');
 
-h2{
+/*GENERAL STYLES*/
+body{
+	margin: 0 auto;
+	font-size: 16px;
+}
+
+h2, h3, h4, h5, h6{
 	font-family: 'Baloo', cursive;
+	color: $main-title-color;
+}
+
+p{
+	color: $text-color;
 }
 
 /*HEADER*/
-
-nav{
-	background-color: $link-color; 
+header{
+	background-color:$link-color;
+	height: 90px;
+	width: 100%;
+	position: fixed;
+	z-index: 3000;
+	.brand-logo{
+		margin: $margins;
+	}	
+	nav{
+		background-color: $link-color;
+		box-shadow: none;
+	}
 	ul{ 
+		li{
+			margin: 13px;
+		}
 		a{
-			font-family: 'Baloo', cursive; 
+			font-family: 'Baloo', cursive;
+			&:hover{
+				background-color: rgba(255, 255, 255, 0.17);
+				border-radius: 10px;
+			}
 		}
 	}
+	#dropdown1{
+		li{
+			a{
+				&:hover{
+					background-color: $text-color-alt;
+				}
+			}
+		}
+	}
+	.dropdown-content{
+		overflow: hidden;
+	}
+	.dropdown-button{
+		margin-top: 30px;
+	}	
 }
 
+/*CONTAINER*/
+
 /*PARALLAX*/
+.text-alt{
+	color: $text-color-alt;
+}
 
 .parallax-container {
 	height: 500px;
+}
+
+.section-background{
+	background-color: $sections;
+}
+
+.grey.lighten-4 {
+	background-color: $text-color-alt;
+}
+
+.input-field{
+	label{
+		color: $text-color;
+	} 
 }
 
 /*FOOTER*/
@@ -27,4 +90,65 @@ nav{
 	background-color: $link-color;
 }
 
+/*RESPONSIVE*/
+@media (min-width: 260px){
+	header{
+		.dropdown-button{
+			width: 100%;
+		}
+	}
+	.hide-cel{
+		display: none;
+	}
+}
 
+@media (max-width: 370px){
+	header{
+		.dropdown-button{
+			width: 100%;
+		}
+	}
+	.hide-cel{
+		display: none;
+	}
+}
+
+@media (min-width: 371px){
+	header{
+		.dropdown-button{
+			width: 30%;
+		}
+	}
+	.hide-cel{
+		display: block;
+	}
+}
+
+@media (min-width: 390px){
+	.parallax-container {
+		height: 230px;
+	}
+}
+
+@media (max-width: 767px){
+	.parallax-container {
+		height: 230px;
+	}
+}
+
+@media (min-width: 768px){
+	.parallax-container {
+		height: 500px;
+	}
+}
+
+@media (min-width: 993px){
+	header{
+		.dropdown-button{
+			display: none;
+		}
+	}
+	.hide-cel{
+		display: none;
+	}
+}
