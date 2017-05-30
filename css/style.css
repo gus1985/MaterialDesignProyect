@@ -1,17 +1,95 @@
+/*IMPORTS*/
 @import url("https://fonts.googleapis.com/css?family=Baloo");
-h2 {
-  font-family: 'Baloo', cursive; }
+/*GENERAL STYLES*/
+body {
+  margin: 0 auto;
+  font-size: 16px; }
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Baloo', cursive;
+  color: #3f51b5; }
+
+p {
+  color: #000000; }
 
 /*HEADER*/
-nav {
-  background-color: #3f51b5; }
-  nav ul a {
+header {
+  background-color: #3f51b5;
+  height: 90px;
+  width: 100%;
+  position: fixed;
+  z-index: 3000; }
+  header .brand-logo {
+    margin: 20px; }
+  header nav {
+    background-color: #3f51b5;
+    box-shadow: none; }
+  header ul li {
+    margin: 13px; }
+  header ul a {
     font-family: 'Baloo', cursive; }
+    header ul a:hover {
+      background-color: rgba(255, 255, 255, 0.17);
+      border-radius: 10px; }
+  header #dropdown1 li a:hover {
+    background-color: #ffffff; }
+  header .dropdown-content {
+    overflow: hidden; }
+  header .dropdown-button {
+    margin-top: 30px; }
 
+/*CONTAINER*/
 /*PARALLAX*/
+.text-alt {
+  color: #ffffff; }
+
 .parallax-container {
   height: 500px; }
+
+.section-background {
+  background-color: #0a0909; }
+
+.grey.lighten-4 {
+  background-color: #ffffff; }
+
+.input-field label {
+  color: #000000; }
 
 /*FOOTER*/
 .page-footer {
   background-color: #3f51b5; }
+
+/*RESPONSIVE*/
+@media (min-width: 260px) {
+  header .dropdown-button {
+    width: 100%; }
+
+  .hide-cel {
+    display: none; } }
+@media (max-width: 370px) {
+  header .dropdown-button {
+    width: 100%; }
+
+  .hide-cel {
+    display: none; } }
+@media (min-width: 371px) {
+  header .dropdown-button {
+    width: 30%; }
+
+  .hide-cel {
+    display: block; } }
+@media (min-width: 390px) {
+  .parallax-container {
+    height: 230px; } }
+@media (max-width: 767px) {
+  .parallax-container {
+    height: 230px; } }
+@media (min-width: 768px) {
+  .parallax-container {
+    height: 500px; } }
+@media (min-width: 993px) {
+  header .dropdown-button {
+    display: none; }
+
+  .hide-cel {
+    display: none; } }
