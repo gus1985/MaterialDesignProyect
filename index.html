@@ -12,16 +12,33 @@
 <body>
 	<!--HEADER-->
 	<header>
+		<!--NAV-BAR-->
 		<nav>
+			<!--DESKTOP & TABLET-->
 			<div class="nav-wrapper container">
-				<a href="index.html" class="brand-logo"><img src="images/webtech-logob.png" class="responsive-img"></a>
+				<a href="index.html" class="brand-logo"><img src="images/webtech-logob.png" class="responsive-img hide-on-med-and-down"></a>
 				<ul id="nav-mobile" class="right hide-on-med-and-down">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="#about-us">About</a></li>
-					<li><a href="#login">Login</a></li>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="#about-us">ABOUT</a></li>
+					<li><a href="#login">LOGIN</a></li>
 				</ul>
+				<!--END DESKTOP & TABLET-->
+				<!--RESPONSIVE NAV-BAR-->
+				<a class='dropdown-button btn right' href='#' data-activates='dropdown1'>MENU</a>
+				<!--DROPDOWN MENU-->
+				<ul id='dropdown1' class='dropdown-content'>
+					<li><a href="index.html">HOME</a></li>
+					<li class="divider"></li>
+					<li><a href="#about-us">ABOUT</a></li>
+					<li class="divider"></li>
+					<li><a href="#login">LOGIN</a></li>
+				</ul>
+				<!--END DROPDOWN MENU-->
+				<a href="index.html" class="brand-logo left"><img src="images/webtech-logob.png" class="responsive-img hide-cel"></a>
+				<!--END RESPONSIVE NAV-BAR-->
 			</div>
 		</nav>
+		<!--END NAV-BAR-->
 	</header>
 	<!--END HEADER-->
 	<!--MAIN CONTAINER-->
@@ -29,10 +46,10 @@
 		<div class="parallax"><img src="images/back-contain-2b.jpg" class="responsive-img"></div>
 	</div>
 	<!--WELCOME SECTION-->
-	<div class="section white">
+	<div class="section section-background">
 		<div class="row container">
-			<h2 class="header">WELCOME TO THE FUTURE</h2>
-			<p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+			<h2 class="header center-align">WELCOME TO THE FUTURE</h2>
+			<p class="text-alt">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
 		</div>
 	</div>
 	<!--END WELCOME SECTION-->
@@ -40,9 +57,9 @@
 		<div class="parallax"><img src="images/back-contain-1b.jpg" class="responsive-img"></div>
 	</div>
 	<!--ABOUT US-->
-	<div class="section white">
+	<div class="section section-background">
 		<div class="row container">
-			<h2 id="about-us" class="header">ABOUT US</h2>
+			<h2 id="about-us" class="header center-align">ABOUT US</h2>
 			<div class="row">
 				<div class="col s12 m4">
 					<div class="card">
@@ -85,9 +102,9 @@
 		<div class="parallax"><img src="images/back-contain-3.jpg" class="responsive-img"></div>
 	</div>
 	<!--LOGIN SECTION-->
-	<div class="section white">
+	<div class="section section-background">
 		<div class="row container">
-			<h2 id="login" class="header">WANNA SEE MORE?, JOIN US!</h2>
+			<h2 id="login" class="header center-align">WANNA SEE MORE?, JOIN US!</h2>
 			<main>
 				<center>
 					<div class="section"></div>
@@ -147,14 +164,14 @@
 						<li><a class="grey-text text-lighten-3" href="#!">Address - Paseo Colón 900, 8° "A" - Bs.As</a></li>
 						<li><a class="grey-text text-lighten-3" href="#!">Phone 1 - (011)4-555-6666</a></li>
 						<li><a class="grey-text text-lighten-3" href="#!">Phone 2 - (011)15-3333-7777</a></li>
-						<li><a class="grey-text text-lighten-3" href="#!">E-mail - info@gus1985.com</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">E-mail - info@webtechstudios.com</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 		<div class="footer-copyright">
 			<div class="container">
-				© 2017 Copyright gus1985 proyects
+				© 2017 Copyright Webtech Studios
 				<a class="grey-text text-lighten-4 right" href="#!">Privacy Policy</a>
 			</div>
 		</div>
